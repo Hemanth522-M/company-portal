@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.headings {
+  color: #119c9c
+}
+
+.videos-heading {
+  color: #119c9c
+}
+
+.outer-paper {
+  padding: 20px;
+}
+
+.inside-paper {
+  padding: 20px;
+  margin: 30px;
+}
+
+.textField {
+  width: 300px;
+}
+
+.videos {
+  display: inline-flex;
+  margin: 5px;
+}

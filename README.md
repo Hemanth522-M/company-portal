@@ -1,68 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Knockri Full Stack (React) Coding Assessment
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+I used React and material UI(CSS) to create the entire application process.
 
-### `npm start`
+## How did you decide which technologies to use as part of your solution?
+   I choose react for this application, because of the following reasons
+        #1 It facilitates the overall process of writing components. ...
+        #2 It boosts productivity and facilitates further maintenance. ...
+        #3 It ensures faster rendering. ...
+        #4 It guarantees stable code. ...
+        #5 It is SEO friendly. ...
+        #6 It comes with a helpful developer toolset. ...
+## Are there any improvements you could make to your submission?
+    No comments
+## What would you do differently if you were allocated more time?
+  If i have really more time, i should more focus on performance of the application with help of some modules like lazy loading, code splitting, webpack & bundlers. And also trying to reduce the size of the code.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How should the application work?
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The user of this react application should be able to view the video response(s) of job candidates applying for a job at their company. The application should have the following workflow,
 
-### `npm test`
+1. Choose candidate from a list.
+2. Depending on the selection in the first step, if the selected candidate has an application, display the video response(s) of the candidate with the relevant question displayed in text. If the selected candidate does not have an application, display appropriate message.
+3. For each video response of a candidate, provide an option to enter comments.
+4. Provide a "Save" button that saves the comments to the api.json file.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requirements
 
-### `npm run build`
+* Only step 1 should be visible when no candidate is picked. Step 1,2,3 and 4 should be visible when a candidate is picked.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* User should be able to change candidate selection at any time.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+* You can use whatever libraries, task runners and build processes you like. React and plain JavaScript are the only requirements (ES6 encouraged, but no TypeScript, CoffeeScript, etc). Redux is strongly encouraged if you see a need for it.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## API Usage
 
-### `npm run eject`
+API can be launched using npm start. You will need to run npm install once you starting working on the project to install dependencies.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Endpoint                     | Result                                              |
+|------------------------------|-----------------------------------------------------|
+| /candidates                  | Lists all available candidates                      |
+| /questions                   | Lists all available questions                       |
+| /applications                | Lists all available applications                    |
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Please follow the bellow instructions to run the application on machine
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  #1 First clone the project, git clone... https://github.com/Hemanth522-M/company-portal.git
+  #2 After clone, enter this cd company-portal
+  #3 Then, npm install
+  #4 Then npm run dev
+  #5 Now to run the project on port 3000
+  #6 Go to http://localhost:3000/ to view the app.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Authors
+   Hemanth M
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
